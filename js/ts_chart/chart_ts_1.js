@@ -13,7 +13,7 @@ $(function () {
   form.append("chart", "TS");
 
   var settings = {
-    url: urlresource + "/y_data_ts_1/",
+    url: urlresource + "/y_data_ts_1/120",
     method: "POST",
     timeout: 0,
     dataType: "JSON",

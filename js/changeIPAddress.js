@@ -1,4 +1,4 @@
-// var urlresource = "https://test-django.texisle-pipeintel.com"  //test server
+// var urlresource = "https://test-django.texisle-pipeintel.com"; //test server
 var app_version = "1.3.15.4"; //test
 var app_type = "dev"; //test
 
