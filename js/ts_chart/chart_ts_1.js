@@ -69,13 +69,28 @@ $(function () {
           var ts = this.x;
           //ts = (ts+(tzone_diff*60000));
           var date = new Date(ts);
+          console.log(date);
           date.setTime(date.getTime() + date.getTimezoneOffset() * 60 * 1000);
           var day = date.getDate();
           var month = date.getMonth();
           var year = date.getFullYear();
-          var d = new Date(year, month, day);
+          var hour = date.getHours();
+          var minute = date.getMinutes();
+          var seconds = date.getSeconds();
+          var d = new Date(year, month, day, hour, minute);
           var month_name = d.toLocaleString("default", { month: "short" });
-          var x = month_name + " " + day + ", " + year;
+          var x =
+            month_name +
+            " " +
+            day +
+            ", " +
+            year +
+            " " +
+            hour +
+            ":" +
+            minute +
+            ":" +
+            seconds;
           // console.log(x)
           input = "<b>" + x + "<b><br><br>" + "<b> $ " + y + "</b>";
           return [input];
